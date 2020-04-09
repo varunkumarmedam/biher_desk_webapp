@@ -63,7 +63,7 @@ myrouter.beforeEach((to, from, next) => {
         }
         else {
             console.log("thusdsdsd");
-            next({ name: "login" })
+            next({ name: "Login" })
         }
     }
     else {
