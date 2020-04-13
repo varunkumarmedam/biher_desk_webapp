@@ -1,5 +1,15 @@
 # biher_desk_webapp
 
+### Apis Link
+```
+biheros.herokuapp.com
+```
+
+### Deloyed at
+```
+biher.netlify.com
+```
+
 ## Project setup
 ```
 npm install
