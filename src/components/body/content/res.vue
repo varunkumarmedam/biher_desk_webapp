@@ -1,11 +1,18 @@
 <template>
-  <div>
+  <div class="ResContent">
     <h3 class="mb-5 pb-5">Select a Year</h3>
-    <sequential-entrance>
-      <div v-for="(data, index) in apps" :key="index" class="col-sm-12 d-inline cardDeck">
-        <div class="card myCard d-inline">{{data}}</div>
+    <div class="col-sm-12">
+      <sequential-entrance>
+        <div v-for="(data, index) in apps" :key="index" class="col-sm-12 d-inline cardDeck">
+          <div class="card myCard d-inline">{{data}}</div>
+        </div>
+      </sequential-entrance>
+    </div>
+    <div class="reading_logo col-sm-12">
+      <div class="float-right">
+        <img src="../../../assets/reading.jpg" height="250px" width="250px" />
       </div>
-    </sequential-entrance>
+    </div>
   </div>
 </template>
 
@@ -20,7 +27,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.reading_logo {
+  margin-top: 100px;
+}
 .myCard {
   padding: 30px;
   height: 100px;

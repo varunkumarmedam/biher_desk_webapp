@@ -7,7 +7,6 @@
     </div>
     <div class="row">
       <div class="col-sm-2">
-        {{temp}}
         <SideBar></SideBar>
       </div>
       <div class="col-sm-10">
@@ -20,10 +19,10 @@
             <home-content></home-content>
           </div>
           <div v-else-if="status == 2">
-            <query-content></query-content>
+            <res-content></res-content>
           </div>
           <div v-else-if="status==3">
-            <res-content></res-content>
+            <query-content></query-content>
           </div>
           <div v-else>
             <account></account>
@@ -55,7 +54,7 @@ export default {
     return {
       show: false,
       status: 1,
-      temp : store.name
+      temp: store.name
     };
   },
   components: {

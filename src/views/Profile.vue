@@ -1,6 +1,6 @@
 <template>
   <div class="myAccount">
-    <h3>Account</h3>
+    <h3>Account {{id}}</h3>
 
     <section v-if="errored">
       <p>Something went wrong</p>

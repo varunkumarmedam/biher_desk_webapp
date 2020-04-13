@@ -10,9 +10,9 @@
 export default {
   name: "Login",
   mounted() {
-    this.$cookies.set("test", "ddcdcdc");
+    // this.$cookies.set("test", "ddcdcdc");
     console.log(this.$cookies.get("connect"));
-    if (this.$cookies.get("connect.sid")) {
+    if (this.$cookies.get("osid")) {
       console.log(this.$cookies.get("connect.sid"));
       this.$router.push("/");
     } else {

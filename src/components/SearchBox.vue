@@ -1,24 +1,30 @@
 <template>
   <div id="cover" class="d-inline">
-    <form method="get" action="">
-      <div class="tb">
-        <div class="td">
-          <input type="text" placeholder="Search" required />
-        </div>
-        <div class="td" id="s-cover">
-          <button type="submit">
-            <div id="s-circle"></div>
-            <span></span>
-          </button>
-        </div>
+    <div class="tb">
+      <div class="td">
+        <input type="text" placeholder="Search" v-model="id" required />
       </div>
-    </form>
+      <div class="td" id="s-cover">
+        <button type="submit" @click="toSearch()">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "SearchBox"
+  name: "SearchBox",
+  data: function() {
+    return {};
+  },
+  methods: {
+    toSearch: function() {
+      this.$router.push({ name: "Profile", params: { id: this.id } });
+    }
+  }
 };
 </script>
 

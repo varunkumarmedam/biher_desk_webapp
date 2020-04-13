@@ -9,17 +9,17 @@
     </div>-->
     <div>
       <div @click="changeHome" :class="{activeCss:home}" class="logos">
-        <img src="../assets/home.png" height="30px" style="margin-bottom:10px" />
+        <img src="../assets/logos/home.png" height="30px" style="margin-bottom:10px" />
         <br />
         <font class="myFont">Home</font>
       </div>
       <div @click="changeRes" :class="{activeCss:res}" class="logos">
-        <img src="../assets/res.svg" height="30px" style="margin-bottom:10px" />
+        <img src="../assets/logos/res.svg" height="30px" style="margin-bottom:10px" />
         <br />
         <font class="myFont">Resources</font>
       </div>
       <div @click="changeQuery" :class="{activeCss:apps}" class="logos">
-        <img src="../assets/query.png" height="30px" width="30px" style="margin-bottom:10px" />
+        <img src="../assets/logos/query.png" height="30px" width="30px" style="margin-bottom:10px" />
         <br />
         <font class="myFont">Queries</font>
       </div>

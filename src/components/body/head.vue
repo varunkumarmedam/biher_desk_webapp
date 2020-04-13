@@ -18,5 +18,6 @@ export default {
 #bodyHead {
   font-weight: bold;
   font-size: 40px;
+  margin-left: 25px;
 }
 </style>
