@@ -10,11 +10,14 @@
 export default {
   name: "Login",
   mounted() {
-    if (this.$cookies.get("osid") && this.$cookies.get("os_token")) {
-      console.log(this.$cookies.get("osid"));
+    this.$cookies.set("test", "ddcdcdc");
+    console.log(this.$cookies.get("connect"));
+    if (this.$cookies.get("connect.sid")) {
+      console.log(this.$cookies.get("connect.sid"));
       this.$router.push("/");
     } else {
       console.log("no cookie found");
+      this.$router.push("/");
     }
   }
 };

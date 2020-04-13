@@ -54,7 +54,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://biheros.herokuapp.com/" + this.id)
+      .get("https://biheros.herokuapp.com/" + this.id)
       .then(response => {
         this.info = response.data;
         console.log("lets see");

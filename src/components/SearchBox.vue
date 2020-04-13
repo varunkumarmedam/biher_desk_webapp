@@ -1,6 +1,6 @@
 <template>
   <div id="cover" class="d-inline">
-    <form method="get" action>
+    <form method="get" action="">
       <div class="tb">
         <div class="td">
           <input type="text" placeholder="Search" required />
