@@ -35,10 +35,12 @@ export default {
   padding: 30px;
   height: 100px;
   border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .myCard:hover {
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: none;
 }
 .cardDeck {
   margin-top: 100px;

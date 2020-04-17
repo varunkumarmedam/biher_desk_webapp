@@ -1,15 +1,25 @@
 <template>
   <div class="col-12">
-    <div class="col-8 mx-auto">
+    <div class="col-sm-12 col-lg-8 mx-auto">
       <img src="../assets/login_logo.jpg" height="500px" width="100%" />
     </div>
-    <div class="col-3 google_btn">
-      <a href="#" class="google">
-        <img src="https://img.icons8.com/color/16/000000/google-logo.png" /> Signup Using Google
-      </a>
+    <div class="col-sm-8 col-lg-3 mx-auto">
+      <button
+        class="col-sm-8 col-lg-12 google_btn pt-1"
+        style="width:100%"
+        onclick="location.href = 'https://biheros.herokuapp.com/google'"
+      >
+        <span class="d-flex justify-content-right">
+          <img
+            src="https://img.icons8.com/color/16/000000/google-logo.png"
+            style="background-color:white"
+            class="p-1 -1"
+            height="35px"
+          />
+          <p class=" pl-4" style="font-size:20px">Login with Google</p>
+        </span>
+      </button>
     </div>
-    <a href="https://biheros.herokuapp.com/google">Login with Google</a>
-    <br />
     <router-link to="/set">Lets Set Cookies</router-link>
   </div>
 </template>
@@ -22,7 +32,7 @@ export default {
   mounted() {
     // this.$cookies.set("test", "ddcdcdc");
     console.log(this.$cookies.get("connect"));
-    if (this.$cookies.get("osid")) {
+    if (this.$cookies.get("connect.sid")) {
       console.log(this.$cookies.get("connect.sid"));
       this.$router.push("/");
     } else {
@@ -34,13 +44,13 @@ export default {
 </script>
 
 <style>
-.google_btn{
+.google_btn {
   color: white;
   background-color: #4285f4;
-  
+  height: 45px;
 }
-a.google{
-  color: white;
+.google_btn:hover {
+  box-shadow: 3px 3px 3px #888888;
 }
 .btn {
   color: blue;

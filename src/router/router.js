@@ -38,18 +38,24 @@ const myrouter = new VueRouter({
             component: () => import(/* webpackChunkName: "404" */"../views/404")
         },
         {
+            path: "/dev",
+            name: "Dev",
+            component: () => import(/* webpackChunkName: "404" */"../Dev")
+        },
+        {
             path: "/:id",
             name: "Profile",
             props: true,
             component: () =>
                 import(/* webpackChunkName: "profile" */"../views/Profile.vue")
         },
+
     ]
 });
 
 myrouter.beforeEach((to, from, next) => {
     if (to.meta.requiresAuth) {
-        if (cookies.get("osid")) {
+        if (cookies.get("connect.sid")) {
             next();
         }
         else {
