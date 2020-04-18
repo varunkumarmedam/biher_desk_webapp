@@ -10,6 +10,7 @@
 export default {
   mounted() {
     this.$cookies.remove("osid");
+    this.$cookies.remove("connect.sid");
     this.$cookies.remove("os_token");
   }
 };

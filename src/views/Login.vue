@@ -16,7 +16,7 @@
             class="p-1 -1"
             height="35px"
           />
-          <p class=" pl-4" style="font-size:20px">Login with Google</p>
+          <p class="pl-4" style="font-size:20px">Login with Google</p>
         </span>
       </button>
     </div>
@@ -31,7 +31,6 @@ export default {
   name: "Login",
   mounted() {
     // this.$cookies.set("test", "ddcdcdc");
-    console.log(this.$cookies.get("connect"));
     if (this.$cookies.get("connect.sid")) {
       console.log(this.$cookies.get("connect.sid"));
       this.$router.push("/");
